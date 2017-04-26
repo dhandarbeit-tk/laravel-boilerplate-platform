@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "deutschehandarbeit-tk/laravel-boilerplate-platform",
+    "description": "",
+    "keywords": ["boilerplate", "laravel"],
     "license": "MIT",
     "type": "project",
     "require": {
