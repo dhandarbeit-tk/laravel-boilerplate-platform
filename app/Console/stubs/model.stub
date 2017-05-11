@@ -2,6 +2,17 @@
 
 namespace DummyNamespace;
 
+use Carbon\Carbon;
+
+/**
+ * Class DummyClass
+ * @package DummyNamespace
+ *
+ * @property-read integer $id
+ *
+ * @property Carbon $created_at
+ * @property Carbon $updated_at
+ */
 class DummyClass extends Model
 {
     //
