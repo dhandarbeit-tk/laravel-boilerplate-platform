@@ -25,4 +25,9 @@ class DummyClass extends Model
     /*
      * INVERSE RELATIONS
      */
+
+
+     /*
+      * RELATIONS THROUGH PIVOTS
+      */
 }

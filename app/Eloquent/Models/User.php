@@ -2,12 +2,12 @@
 
 namespace App\Eloquent\Models;
 
+use App\Eloquent\Traits\IsModel;
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+class User extends AuthenticatableModel
 {
-    use Notifiable;
+    use Notifiable, IsModel;
 
     /**
      * The attributes that are mass assignable.
@@ -26,4 +26,18 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /*
+     * RELATIONS
+     */
+
+
+    /*
+     * INVERSE RELATIONS
+     */
+
+
+    /*
+     * RELATIONS THROUGH PIVOTS
+     */
 }
