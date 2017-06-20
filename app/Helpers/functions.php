@@ -17,7 +17,7 @@ function now()
  * Create a collection from the given value.
  *
  * @param  mixed  $value
- * @return \Illuminate\Support\Collection
+ * @return \App\Helpers\Collection
  */
 function collect($value = null)
 {
