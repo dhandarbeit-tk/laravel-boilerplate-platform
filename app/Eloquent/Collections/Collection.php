@@ -2,9 +2,11 @@
 
 namespace App\Eloquent\Collections;
 
-use App\Eloquent\Models\Model;
-
+/**
+ * Class Collection
+ * @package App\Eloquent\Collections
+ */
 class Collection extends \Illuminate\Database\Eloquent\Collection
 {
-    use \App\Helpers\CollectionTrait, CollectionTrait;
+    use \App\Support\CollectionTrait, CollectionTrait;
 }

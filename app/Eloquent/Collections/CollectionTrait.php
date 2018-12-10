@@ -4,16 +4,13 @@ namespace App\Eloquent\Collections;
 
 use App\Eloquent\Models\Model;
 
+/**
+ * Trait CollectionTrait
+ * @package App\Eloquent\Collections
+ */
 trait CollectionTrait
 {
-    public function delete()
-    {
-        $this->each(function(Model $model) {
-            $model->delete();
-        });
-    }
-
-    public function without($model = null)
+    public function without(Model $model = null)
     {
         if($model === null) {
             return new static($this);
@@ -24,10 +21,16 @@ trait CollectionTrait
         return $collection->forget($model->id);
     }
 
-    public function appends($attributes)
+    public function eachDelete()
     {
-        $this->each(function($model) use($attributes) {
-            /** Model $model */
+        $this->each(function(Model $model) {
+            $model->delete();
+        });
+    }
+
+    public function eachAppends($attributes)
+    {
+        $this->each(function(Model $model) use($attributes) {
             $model->append($attributes);
         });
 
@@ -37,7 +40,7 @@ trait CollectionTrait
     public function update($attributes)
     {
         $this->each(function(Model $model) use($attributes) {
-           $model->fill($attributes)->save();
+            $model->fill($attributes)->save();
         });
     }
 }

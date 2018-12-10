@@ -15,7 +15,7 @@ use Carbon\Carbon;
  */
 class DummyClass extends Model
 {
-    protected $table;
+    protected $table = 'DummyTable';
 
     /*
      * RELATIONS
