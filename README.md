@@ -14,7 +14,6 @@ Create project<br />
 - [doctrine/dbal](https://github.com/doctrine/dbal)
 - Laravel IDE Helper [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper)
     - registered for **dev env only** (via AppServiceProvider)
-- Sentry for Laravel [getsentry/sentry-laravel](https://github.com/getsentry/sentry-laravel)
 - [caouecs/laravel-lang](https://github.com/caouecs/laravel-lang)
 - Hashids bridge [vinkla/hashids](https://github.com/vinkla/laravel-hashids)
 
